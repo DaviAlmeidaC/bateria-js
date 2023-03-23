@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alura MIDI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="images/bateria.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    
+
+</head>
+<body>
+
+    <h1>bateria</h1>
+
+    <section class="teclado">
+        <!--<button onclick="alert('Pom')" class="tecla tecla_pom">Pom</button> esse onclick é um comando do js a onde qunado selecionado, aparece uma caixinha de aviso em cima do navegador, e dentro dos '' tem se o poder de colocar qual mensagem ira aparecer-->
+        <button class="tecla tecla_pom"><img src="images/bumbu 2.jfif" alt="simbolo de bumbu 2" class="imagem"></button>
+        <button class="tecla tecla_clap"><img src="images/palma.jfif" alt="chimbal fechado" class="imagem"></button>
+        <button class="tecla tecla_tim"><img src="images/chimbal fechado.jfif" alt="chimbal fechado" class="imagem"></button>
+
+        <button class="tecla tecla_puff"><img src="images/bumbo.jfif" alt="imagem de bumbu" class="imagem"></button>
+        <button class="tecla tecla_splash"><img src="images/chimbal aberto.jfif" alt="simbolo de chimbal aberto" class="imagemchim"></button>
+        <button class="tecla tecla_toim"><img src="images/prato.jfif" alt="chimbal fechado" class="imagempra"></button>
+
+        <button class="tecla tecla_psh"><img src="images/download.jfif" alt="simbolo de caixa" class="imagem"></button>
+        <button class="tecla tecla_tic"><img src="images/tic.jfif" alt="chimbal fechado" class="imagem"></button>
+        <button class="tecla tecla_tom"><img src="images/tom.jfif" alt="chimbal fechado" class="imagem"></button>
+    </section>
+
+    <audio src="sounds/keyq.wav" id="som_tecla_pom"></audio>
+    <audio src="sounds/keyw.wav" id="som_tecla_clap"></audio>
+    <audio src="sounds/keye.wav" id="som_tecla_tim"></audio>
+    <audio src="sounds/keya.wav" id="som_tecla_puff"></audio>
+    <audio src="sounds/keys.wav" id="som_tecla_splash"></audio>
+    <audio src="sounds/keyd.wav" id="som_tecla_toim"></audio>
+    <audio src="sounds/keyz.wav" id="som_tecla_psh"></audio>
+    <audio src="sounds/keyx.wav" id="som_tecla_tic"></audio>
+    <audio src="sounds/keyc.wav" id="som_tecla_tom"></audio>
+
+        <!--<audio  controls src="sounds/keyc.wav" id="som_tecla_tom"></audio  controls> a tag audio é a tag a onde é possivel adicionar audio e a tag control e a tag a onde é possivel controlar o audio e o ouvir tmb-->
+
+        <script src="main.js"></script><!--estou direcionando o js no html, e ele esta na parte do body por conta que, se o meu js precisa que o html esteja carregado, ele precisa esta no body, mas se ele so precisa fazer uma funcionalidade sem o html, ele pode ficar no head-->
+</body>
+</html>
